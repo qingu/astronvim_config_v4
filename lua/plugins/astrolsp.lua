@@ -44,18 +44,18 @@ return {
     ---@diagnostic disable: missing-fields
     config = {
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
-      fortls = function()
-        return {
-          cmd = {
-            "fortls",
-            "--lowercase_intrinsics",
-            "--hover_signature",
-            "--hover_language=fortran",
-            "--use_signature_help",
-          },
-          filetype = { "fortran" },
-        }
-      end,
+      -- fortls = function()
+      --   return {
+      --     cmd = {
+      --       "fortls",
+      --       "--lowercase_intrinsics",
+      --       "--hover_signature",
+      --       "--hover_language=fortran",
+      --       "--use_signature_help",
+      --     },
+      --     filetype = { "fortran" },
+      --   }
+      -- end,
     },
     -- customize how language servers are attached
     handlers = {
